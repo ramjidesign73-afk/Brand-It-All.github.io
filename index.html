@@ -1228,7 +1228,7 @@ const submitButton = contactForm.querySelector('button[type="submit"]');
 const originalButtonText = submitButton.textContent;
 const formData = new FormData(contactForm);
 const payload = Object.fromEntries(formData.entries());
-const apiBaseForGithubPages = 'https://your-backend-url.onrender.com';
+const apiBaseForGithubPages = 'https://brand-it-all-api.onrender.com';
 const isGithubPages = window.location.hostname.endsWith('github.io');
 const apiUrl = isGithubPages
 ? `${apiBaseForGithubPages}/api/submit`
